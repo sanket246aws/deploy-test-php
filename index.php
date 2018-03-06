@@ -2,7 +2,7 @@
 
 echo "test";
 defefe
-function wdwdw(
+functfgf454ion wdwdw(
     
 );
 
