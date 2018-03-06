@@ -11,6 +11,11 @@ deploy:
   access_key_id: "$aa"
   secret_access_key: "$bb"
   bucket: 247travis-react
+  skip_cleanup: true
+  #script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/<dir> <ssh-user>@<deploy-host>:path/to/files
+  #on:
+  #  branch: master
+
 env:
   global:
   - secure: YRAzuLLC0JugAz5WMBk3M5Wj7vb1PXObjFD6H4dLSOWIT6NZf9oc6mjdm6oaT14L2C8lFP59vrsueS6MNe4zBIHvR3FT+J2nMWScrdN7WkaGnZ5PutqXOiE/fJOy2m4l4JdsFgni5D3GBOBzH3AGDV4FPftzl4HdPCGFjwR/t9YwERI1jx+vN+ypH/BOczr0hUwkWj8KtLlT9PdW2I8g+Xa3zHArjKmI9w4ydYZ0PnLE1HUU1BvSNyl14qAOXYw7yu6HeleJm7yAd6mxvi+MfMonHfpCb/XgxwsjqOyCRUSARb44FdDQ6xz3q8z/HgwqlJVinDCtMYQ1YU71hbwrL6PE0+MfRwcIhh9xdW7U7wX27LWRrqc+kMZ2QNiVfIZ4HViJ8HQqCsQbqOJx2c9Xh6AnnYRqsSNK13/T9tvIkzsRhD+HUsdNRhA+3LQqTM0u97E5LxwWdrpX1q3/d9sRG9qLWxxQkkLS5qncpheBw8meFw3++83Q5wFiJcpzEjussJhL1K9wwDnYY1FAwqxY2qB31qvaXVmVUXhgbKVau18OdYtgfPxeLvZijFAO6SiRYrUj8Tc7eMozxLASzzpQ2vySvWAMbcXNxikwavv8gO/qztcUVH46WZLcVNcUmjeZGGfUAYlPUkivsVfp3meYDjVoxryYduwqoGlgIP6O8ZE=
