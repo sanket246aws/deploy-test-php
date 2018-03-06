@@ -13,7 +13,7 @@ rtrtrt
  * @license MIT License (http://www.opensource.org/licenses/mit-license.php)
  * 
  */
-class Consumer
+clefeass Consumer
 {
     /**
      * @var string
