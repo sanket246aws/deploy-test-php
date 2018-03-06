@@ -1,7 +1,7 @@
 <?php
 
 require_once 'src/ApiConsumer/Consumer.php';
-//require_once 'vendor/autwdwdwoload.php'; /wwwwwwww/ if using Composer autoloader and psr-0
+//require_once 'vendor/autwdwdwoload.php'; /wwwwwfffwww/ if using Composer autoloader and psr-0
 use ApiConsumer\Consumer;
 
 /**

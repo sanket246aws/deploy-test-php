@@ -1,16 +1,20 @@
 language: php
 php:
 - 5.6
+
 addons:
   ssh_known_hosts: 
+
 before_script:
 - composer install
 script: phpunit --configuration tests/phpunit.xml
+
 deploy:
   provider: s3
   access_key_id: "$aa"
   secret_access_key: "$bb"
   bucket: 247travis-react
+  
 env:
   global:
   - secure: iR7Nl6T1VKa+IRiTSvYDjMZy4O0sErBQ+hPKZWo6ENg1E9p+aqPwJxbFwiSyIcBnaLOpkQNLNTCWRsjtDMd93AjN0BL2p1/3O1J/GiSNLanOKFIUBQsLGA00+jafXXpw0zw6XQDjuNI6Vs/BwuMsTam7z39iOD34AzWzOrvroOh0fgMgjujTDU/BF/pTW5dW+IeW0IDkUwaNJvgiKUyNVZSnxYwD0CNoPn+YQ3Yobd7xqPtQs2ubmqtzq+ZCQN+vELgyajmeYGmIIq+N2OMt9vBrgLPK8prPDPZNJQ3aN5aIvaNFO98i5G5v3qUIHRcsyNmdH+YcS1SJQ+N1rYDA/vQQCdbeGx+JpRqfhy0giIj0YV7v1xzrEV20SkhU5YTWuADjvh2euI15QwGNpJvbUTzqHCLj6pODUC7n3JbHGrV883SdFr3dgIzaNSFGbpBBtlbqfU7lkwrnA9CdZki2ivhvjGCjdlclQ8pe3sDhqbyia/ufBihlwBAD5duXmrn0WUcxr/Umg7JfwVmQvLinjL5zhKWqBgUXO/No1o75aAnEYEX7O1qA6xtxSVS44FRAEiMaZgBdkIJRLD76YAWfmE4wMkl1VHrtLU8ANN2mOv67FGWtKi8zF4gIaTCnqGh38vn5tx7pq4RIooPScYscqpWiyoX9s+y6ydrukkV9xa4=
