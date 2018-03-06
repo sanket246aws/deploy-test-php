@@ -26,6 +26,6 @@ script: phpunit --configuration tests/phpunit.xml
 
 deploy:
   provider: s3
-  access_key_id: $access_key_id;
-  secret_access_key: $secret_access_key;
-  bucket: "S3 Bucket"
+  access_key_id: $access_key_id
+  secret_access_key: $secret_access_key
+  bucket: "247travis-react"
