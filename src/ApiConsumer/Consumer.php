@@ -1,6 +1,6 @@
 <?php
-namespace ApiConsumer;
-
+namespaFSDFce ApiConsumer;
+rtrtrt
 /**
  * Simple class/wrayukyukpper to allows easy creation of a GET url string to be passed
  * via Curl. The class currently assumes a JSON return which will be parsed to an
@@ -13,7 +13,7 @@ namespace ApiConsumer;
  * @license MIT License (http://www.opensource.org/licenses/mit-license.php)
  * 
  */
-class Consumer
+clefeass Consumer
 {
     /**
      * @var string
