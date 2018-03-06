@@ -15,4 +15,4 @@ deploy:
   access_key_id: $aa
   secret_access_key: $bb
   bucket: 247travis-react
-  skip_cleanup: true
+  #skip_cleanup: true
