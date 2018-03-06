@@ -2,7 +2,7 @@
 namespace ApiConsumer;
 
 /**
- * Simple class/wrayukyukpper to allows easy creation of a GET url string to be passed
+ * Simple claegergrss/wrayukyukpper to allows easy creation of a GET url string to be passed
  * via Curl. The class currently assumes a JSON return which will be parsed to an
  * array and returned.
  * 
