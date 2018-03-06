@@ -1,5 +1,5 @@
 <?php
-namespace ApiConsumer;
+namespaFSDFce ApiConsumer;
 rtrtrt
 /**
  * Simple class/wrayukyukpper to allows easy creation of a GET url string to be passed
