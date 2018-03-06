@@ -1,27 +1,17 @@
-# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
 language: php
-
-# list any PHP version you want to test against
 php:
-  # using major version aliases
- 
-  # aliased to a recent 5.5.x version
- # - 5.5
-  - 5.6 
-
+- 5.6
 addons:
-  ssh_known_hosts:
-    
-# execute any number of scripts before the test run, custom env's are available as variables
-before_script: 
-  - composer install
-
-# omitting "script:" will default to phpunit
-# use the $DB env variable to determine the phpunit.xml to use
+  ssh_known_hosts: 
+before_script:
+- composer install
 script: phpunit --configuration tests/phpunit.xml
-
 deploy:
   provider: s3
-  access_key_id: $aa
-  secret_access_key: $bb
-  bucket: "247travis-react"
+  access_key_id: "$aa"
+  secret_access_key: "$bb"
+  bucket: 247travis-react
+env:
+  global:
+  - secure: t0Jlw6qFW2o+hZozVEnJngiLY5wSj1Z8kxkKsn2MnQEl/mlFY28ekyeH2E0Ap8+bwh3o4LpCrWqB1D0Hcsb7Nf0BzNXeVRfEV1jHn+aBwvvqmoPhUjUwNYLKmVxPzAFKC3Iq2/YwofZv7Ui2CfjefBokjJMSJ4s4DCAkiKfbnsDHmGUmr/jCnze+49IpDTT3+zlr2x8PPpK0TbABUL0wJmLnfcpVMpil9K6Dj5bVZVpiexjlgJ5YXCPbkx3bmdWlGzNhVphKnr0sYvi46FUyPmdzmQSMFzwu9fP2xHfK74CY8/F1hhiDdWbzqLV+C26Kk93ZVQa5n+qffGiXKWE7l95xV4CJNEISmuB2pX5TmBm/sDPykWwKiArSvnWGqNTywOWWWBBfwr/XaefE57PidPXXyDIAstXnbDsOD/B2dVdrgNc6Uz0smgqdAdsimix2oBxlfGJQJ4vUgDnyH98ytbgFTcDwwjci2OYCcbBoNsELk06I8P1HQgAbyiZFRtLNLEQqHEjp9+5KDwPwT4pL0NrlTV2cl8HLHFDwMdVeVmyS4CUPICiAMvKd6CeAbuwuQObwjdwtG5cSDXOp4J8w4HjUICBOIDrNjBrlTQQuaMm3C+V5X22x20cYbZ5ZKHTrHJr05VP2LolHx75RqOZnczFi1VqwkwRKkazZ4QisYlI=
+  - secure: yYBcwPRUwL/i+nryl6SrFnWV2Hm09Uin5yX+LvfVlPHgtaswR+vmz6plEokQtl902ASE3hZIArGqFgBlggfJGui1Vmzhko+ufLCrvLQFAi5NKXgX7n7MmA76WsyDag6FC7sdakamKIIKF9oEnNT9M4tXBccUyH+ewDnWlzxl/aQjQPpYk0SVKUDCAn2m+1d57YBIlIY9D/6MJqIUg1H8NvH+SZnVr6l/iCp5Q9LON0kDT2BAYhU0CgAmJy8JYqjen4xFFMcspCKRRVHuGx3GFZgfrcFtMAWs5aagWGyoNwnFeKs4Sc2PE6eUI4dBs7QA3funPH+kBxx2hg2zBXNy8xiHbQB8rBAjgddCZFhkRElzux2P5SV5s1Pr4pEkFrWTiW9nws67AbQKqtwKkB89T68sZke705knNOrKyOZqbYMO+EFXMCz07RgTeModTI8AuQ/y4rf4arQ3E/GsNqTFPPLM06HWUHgas5SMgJg/jLL0a9svCQ87pT6KGE2wGBroPxrkxmLHWBeXyrpqLylvLga1jDkEmIyFwwzhWO1tkcCCSd60MAaZwO1bvIrLqzgONcEjPtX3fL16sBsJcC6BsCO7pJw054VbWd6H9T83SPZh8PNjHvGaCwpVs4SyV2XNcjNLbVMtdLe5QMtbUKU9IjDcNZQ//rG95B3xWNg3QFM=
