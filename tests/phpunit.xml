@@ -1,5 +1,12 @@
 <phpunit backupGlobals="true" bootstrap="./bootstrap.php">
+
+	<filter>
+		<whitelist>
+			<directory>../index.php</directory>
+		</whitelist>
+	</filter>
+
 	<testsuite>
-		<directory>./index.php</directory>
+		<directory>./</directory>
 	</testsuite>
 </phpunit>
