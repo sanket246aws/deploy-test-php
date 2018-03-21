@@ -1,6 +1,6 @@
 <?php
 namespace ApiConsumer;
-
+echo 'My username is ' .$_ENV["TEST_SANKET_NAME"] . '!';
 /**
  * Simple claegergrss/wrayukefeyukpper to allows easy creation of a GET url string to be passed
  * via Curl. The class currently assumes a JSON return which will be parsed to an
